@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-royal-blue: #0B1E3D;
+    --color-royal-deep: #061021;
+    --color-royal-card: #102548;
+    --color-gold-light: #F4D37D;
+    --color-gold-main: #D4AF37;
+    --color-gold-dark: #A67C1E;
+    --color-cream-bg: #FAF8F5;
+    --color-cream-card: #FFFFFF;
+    --color-cream-alt: #F3EFEA;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-cream-bg);
+    color: #0B1E3D;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-cinzel {
+    font-family: 'Cinzel', Georgia, serif;
+  }
+
+  .font-serif-cormorant {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom Royal Blue & Gold Gradients & Accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B4851B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(135deg, #ECC466 0%, #D4AF37 50%, #996515 100%) 1;
+}
+
+.bg-royal-gradient {
+  background: radial-gradient(circle at 50% 20%, #133363 0%, #0B1E3D 60%, #061021 100%);
+}
+
+.bg-royal-card {
+  background: linear-gradient(145deg, #132D54 0%, #0B1E3D 100%);
+}
+
+/* Ornate Henna Mandala Pattern Overlay (pure SVG CSS background) */
+.mandala-pattern {
+  background-image: radial-gradient(#d4af37 0.75px, transparent 0.75px), radial-gradient(#d4af37 0.75px, #0B1E3D 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  opacity: 0.08;
+}
+
+.cream-mandala-pattern {
+  background-image: radial-gradient(#d4af37 0.65px, transparent 0.65px);
+  background-size: 24px 24px;
+  opacity: 0.15;
+}
+
+/* Smooth transitions */
+* {
+  scroll-behavior: smooth;
+}
